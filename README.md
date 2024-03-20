@@ -1,9 +1,9 @@
-#Sorting Algorithms (Batcher, Heap, Shell, Insertion, Quick)
+# Sorting Algorithms (Batcher, Heap, Shell, Insertion, Quick)
 
-##Purpose: 
+## Purpose: 
 The purpose is to create a sorting program that sorts 8-bit integer arrays through either insert, shell, heap, quick, or batcher’s odd-even merge sort.
 
-##How to Use the Program:
+## How to Use the Program:
 Usage: ./sorting [-Hahbsqi] [-n length] [-p elements] [-r seed]
 
 OPTIONS:
@@ -20,10 +20,10 @@ OPTIONS:
 -p elements  	Specify number of elements to print (default: 100).
 -r seed 	Specify random seed (default: 13371453).
 
-##Design: 
+## Design: 
 There will be a sorting.c, which brings together all of the sorting algorithms’ c files and makes the program complete. This will also be the executable. The function will take in a type of sorting algorithm, and there will be an integer value associated with the n and p values, and then the sorting algorithm will return the sorting algorithm.
 
-##Functions:
+## Functions:
 
 - Set set_empty(void): Returns the sets and bits to zero.
 - Set set_universal(void): This would return every possibility of a member in a set.
@@ -35,7 +35,7 @@ There will be a sorting.c, which brings together all of the sorting algorithms�
 - Set set_difference(Set s, Set t): Inputs sets s and t and then negates t so ~t and does the AND operation to find the difference between the set s and set t. Then, it returns the integer array with the difference.
 - Set set_complement(Set s): Inputs the set s and negates it so returns ~s which is the complement to set s.
 
-###Batcher’s Odd-Even Merge Sort:
+### Batcher’s Odd-Even Merge Sort:
 
 - int cmp(Stats *stats, int x, int y): Inputs and compares x and y. If x > y returns 1; if x = y,returns 0; if x < y returns -1. This function is given to us.
 - int move(Stats *stats, int x): Inputs stats and int x the stats field would give the jump/move amount and the x is the integer that moves. Returns new x. This function is given to us. 
